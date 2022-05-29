@@ -4,7 +4,7 @@
 - Sales Order
 - Recurring Order
 - Delivery Order
-- Job Order
+- Work Order
 - Sales Return
 - Invoice
 - Sales Receipt
