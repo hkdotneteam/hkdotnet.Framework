@@ -4,6 +4,7 @@
 - Sales Order
 - Recurring Order
 - Delivery Order
+- Service Order
 - Sales Return
 - Invoice
 - Sales Receipt
