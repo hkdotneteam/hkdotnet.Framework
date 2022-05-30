@@ -20,20 +20,28 @@
 ### Domain layer
 - It contains domain service and domain model
 - Domain service interact with domain models and repositories
-- Domain model is only responsible for modifying properties of an entity
+- Domain model is only responsible for modifying properties of an entity, related entity should be feeded into the method by services
+- A domain service can reference other related domain service (e.g. Product service reference product type service. So it does not require application service to handle)
 
 ### Entity
 - It contains only properties
 - It is expected to use with entity framework core. So complex modelling is allowed to take advantage of OOP.
 - Fluent API is preferred over data annotation because it can adopt to different databases
+- Default database configuration should be prepared
+- Default table relation should be optional for different applications
 
 ### Unit of work
 - It is responsible to store the event, state and changes from domain service and repository
 - It manages the connection and transaction
 
+### Entity framework core
+- Easy database creation and migration
+- Easy switching database store
+- It supports complex models which allow easier reuse of class
+
 ### Repository
 - It is responsible to interact with the unit of work for the changes and get data
+- It gives flexibility to use other data access technology for some queries
 - It does not have the knowledge of database connection
 - Parameterized SQL or stored procedure are allowed for queries
 - Feel free to create repository for different use cases, so changing the database stores will be easier
-- Never create SQL by concatenating string with parameters
