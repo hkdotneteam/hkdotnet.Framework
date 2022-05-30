@@ -1,1 +1,100 @@
-<mxfile host="app.diagrams.net" modified="2022-05-30T07:00:04.988Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53" version="18.1.3" etag="YahtoGPp1tKgHp2Hm-2g" type="github"><diagram id="DxTRZ_2KetoMtEReJHoR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-30T07:29:59.973Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53" etag="yr3nIo2LnjBBWfP-9l-u" version="18.1.3" type="github">
+  <diagram id="DxTRZ_2KetoMtEReJHoR" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-1" value="Email Sender" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="160" y="30" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-2" value="+Id&#xa;+SendAs&#xa;+EmailService&#xa;+Host&#xa;+Port&#xa;+UserName/Client Id&#xa;+Password/Refresh token&#xa;+Secure&#xa;+Access token&#xa;+IsDefaultSender" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-1">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-3" value="Email Template" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="30" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-4" value="+Id&#xa;+Domain&#xa;+Action&#xa;+SendFromEmail&#xa;+ReplyToEmail&#xa;+Subject&#xa;+Body&#xa;+Remark&#xa;+BindingSchema&#xa;+IsValid" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-3">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-6" value="Email Message" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="30" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-7" value="+Id&#xa;+From&#xa;+To&#xa;+Reply to&#xa;+Cc/Bcc&#xa;+Schedule date&#xa;+Subject&#xa;+Body&#xa;+Sent date&#xa;+Last Failed attempt date&#xa;+Attempt&#xa;+Cancel Date" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-6">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-8" value="Entity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-9" target="OfBrR5H-bLNZ_B3tFC4N-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-9" value="Email Sender Model" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-10" value="+NewSMTP()&#xa;+NewAPISender()&#xa;+ChangeEmailService()&#xa;+SetSMTP()&#xa;+SetAPISender()&#xa;+SetDefaultSender(bool)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-9">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-11" target="OfBrR5H-bLNZ_B3tFC4N-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-11" value="Email Template Model" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="310" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-12" value="+New()&#xa;+UpdateMetaData()&#xa;+Update()&#xa;+Validate()" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-11">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-13" target="OfBrR5H-bLNZ_B3tFC4N-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-13" value="Email Message Model" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="310" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-14" value="+New()&#xa;+Sent()&#xa;+Failed()&#xa;+Cancel()" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-13">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-19" value="Domain model" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-21" value="Email Sender Service" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="160" y="590" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-22" value="+Get()&#xa;+NewSMTP()&#xa;+NewAPISender()&#xa;+Add()&#xa;+Update()&#xa;+Delete()" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-21">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-24" value="Email Template Service" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="590" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-25" value="+Get()&#xa;+Add()&#xa;+Update()&#xa;+UpdateMetaData()&#xa;+Delete()" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-24">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-27" value="Email Message Service" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="590" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-28" value="+SendEmail()&#xa;+ProcessQueue()&#xa;+CancelQueue()&#xa;&#xa;*Retry policy&#xa;*Cancel after time" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="OfBrR5H-bLNZ_B3tFC4N-27">
+          <mxGeometry y="30" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OfBrR5H-bLNZ_B3tFC4N-22" target="OfBrR5H-bLNZ_B3tFC4N-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfBrR5H-bLNZ_B3tFC4N-30" value="Domain service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
