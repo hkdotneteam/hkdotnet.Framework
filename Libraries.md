@@ -1,4 +1,4 @@
-#Nuget Library Decision
+# Nuget Library Decision
 
 ### Password hashing
 - Konscious.Security.Cryptography.Argon2
@@ -15,3 +15,7 @@
 
 ### Frontend
 - ReactJS.NET
+
+### Image handling
+- ImageSharp
+- SkiaSharp
