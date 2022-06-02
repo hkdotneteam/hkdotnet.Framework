@@ -19,3 +19,6 @@
 ### Image handling
 - ImageSharp
 - SkiaSharp
+
+### Excel Library
+- ClosedXml
