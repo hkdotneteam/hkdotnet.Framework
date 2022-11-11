@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2022-11-10T15:39:26.507Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" version="20.2.6" etag="-HKfY6fAOkUv4IIkDRog" type="github"><diagram id="P93Z04kaB4kCo8aBxu9Z">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-11T13:54:39.121Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="mE4Rq2Iu8sjRxtoLLGXL" version="20.2.6" type="github">
+  <diagram id="P93Z04kaB4kCo8aBxu9Z" name="Page-1">
+    <mxGraphModel dx="959" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-1" value="Entity: IEntity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-2" value="IEntity&lt;br&gt;- Id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-3" value="AggregateRoot: Entity, IAggregateRoot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-4" value="IAggregateRoot: IEntity&lt;br&gt;- Created&lt;br&gt;- LastUpdated" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-5" value="UserLog&lt;br&gt;- At&lt;br&gt;- By" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-6" value="StaticAggregateRoot: AggregateRoot, IStaticEntity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="70" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-B2CwsDPE-wSsxKeBRy1-7" value="IStaticEntity: IEntity&lt;br&gt;- IsDisabled&lt;br&gt;- Disabled" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
